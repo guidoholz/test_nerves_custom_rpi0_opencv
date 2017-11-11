@@ -1,6 +1,7 @@
-# TestNervesCustomRpi0Opencv
+# Nerves-System-Rpi0 with OpenCV3
 
-## set Target
+This is a help for everybody who wants to use e.g. opencv in a nerves-project. But openCV can be replaced by any other library you have to additionaly add to your nerves-project. If so, don't clone my my nerves_custim_rpi0_opencv.git repo. Instead you have to build your own firmware with buildroot... But this is easy, just read the text of the hexdocs-link!
+
 First you have to build your own custom-firmware and change via buildroot your libs and add opencv3 support.
 How does this works you can figure out here:
 https://hexdocs.pm/nerves/systems.html#creating-or-modifying-a-nerves-system-with-buildroot
@@ -27,7 +28,7 @@ add [elixir_make](https://github.com/elixir-lang/elixir_make) to your project
 mkdir src priv
 ```
 in your src dir you put all your .cpp and .hpp files (or .c and .h)
-The executable HAS TO create into priv-dir!!!
+The executable has to be created into priv-dir!!!
 #### Step 3
 Create a Makefile in your project-root
 SMALL HELP: add the following line to your Makefile
